@@ -1,11 +1,19 @@
 package com.company.homework6;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+
+//Задание
+//        Для набора случайно сгенерированных целых чисел
+//        нужно:
+//        ■ Количество положительных;
+//        ■ Количество отрицательных;
+//        ■ Количество двухзначных;
+//        ■ Количество зеркальных чисел. Например, 121 или 4224.
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +22,7 @@ public class Main {
         int countLess0=0;
         int length2=0;
         int mirror=0;
-        for(int i=0;i< 1000;i++){
+        for(int i=0;i< 99900;i++){ //Я сравнивал вычислительную мощь нота и пк,поменяйте пожалуйста на что-то другое чтобы побыстрее считало, где-то 100 нормально будет
         arr.add(getRandom(400,-400));
         }
         System.out.println(arr.toString()+"\n");
